@@ -25,15 +25,17 @@ main(int argc, char *argv[])
     }
 
     k = 0;
-    for (i = 1; i <= number; i++)
+    printf("1 2 ");
+    for (i = 3; i <= number; i+=2)
     {
         prime = true;
-        for (j = 2; j <= i/2; j++)
+        for (j = 3; j <= i/2; j+=2)
         {
             modulo = i % j;
             if (modulo == 0)
             {
                 prime = false;
+                continue;
             }
         }
         if (prime == true)
