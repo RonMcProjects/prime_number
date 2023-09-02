@@ -20,4 +20,4 @@ for i in range(3, int(number), 2):
             k = k + 1
             if (k % 10 == 0):
                 print()
-
+print("")
